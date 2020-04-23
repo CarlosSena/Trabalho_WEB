@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Execicio1</title>
+   <div class="tabela">
+       <form>
+           <h3>Digite um numero</h3>
+    <input id="num1" type="number">
+    <h3>Digite outro numero</h3>
+     <input id="num2" type="number"> </form>
+   <button onclick="maior()">Calcular</button></br>
+   Resposta: <div id='resposta' style='display:inline'></div>
+   
+</div>
+
+   <script type="text/javascript">
+    function maior(){
+     var numero1 = parseFloat(document.getElementById("num1").value);
+     var numero2 = parseFloat(document.getElementById("num2").value);
+     
+     
+     if (numero1 > numero2)
+         resposta.innerHTML = (numero1 + " Será maior que " + numero2);
+     else
+         if(numero2 > numero1)
+         resposta.innerHTML =(numero2 + " Será maior que " + numero1);
+         else
+         resposta.innerHTML =(numero1 + " Será igual  " + numero2);
+    }
+ </script>
+
+ </head>
+</html>
