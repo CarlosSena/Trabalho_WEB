@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Execicio1</title>
+   <div class="tabela">
+       <form>
+           <h3>Digite a idade do filho</h3>
+    <input id="num1" type="number">
+    <h3>Digite a idade da mãe</h3>
+     <input id="num2" type="number"> </form>
+   <button onclick="maior()">Calcular</button></br>
+   Resposta: <div id='resposta' style='display:inline'></div>
+   
+   
+
+   <script type="text/javascript">
+    function maior(){
+      var numero1 = parseFloat(document.getElementById("num1").value);
+     var numero2 = parseFloat(document.getElementById("num2").value);
+     
+     var soma = numero1 - numero2;
+         resposta.innerHTML = (soma + "anos");
+    }
+    </script>
+
+ </head>
+</html> 
